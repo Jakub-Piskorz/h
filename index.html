@@ -23,8 +23,8 @@
         background: rgb(18, 17, 17);
         background: linear-gradient(
           133deg,
-          rgba(18, 17, 17, 1) 0%,
-          rgba(42, 40, 39, 1) 100%
+          rgba(18, 17, 17, 1) 0vh,
+          rgba(42, 40, 39, 1) 100vh
         );
         color: #efefef;
         font-family: Robota, 'Varela Round';
@@ -51,9 +51,28 @@
         font-size: 18px;
         display: block;
         text-align: center;
-        line-height: 52px;
+        line-height: 48px;
         letter-spacing: 0.8px;
         color: lightblue;
+      }
+      .personal-links {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 0 20px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 15px;
+      }
+      .divider {
+        display: flex;
+        width: 50%;
+        margin: 25px 25%;
+        background: #999;
+        height: 1px;
       }
       h1:after {
         content: '_';
@@ -103,33 +122,27 @@
       <h1>Jakub Piskorz.dev</h1>
       <ul>
         <li>
-          <a href="https://fastfile.netlify.app">FastFile - Cloud storage</a>
+          <a href="fastfile">FastFile - Cloud files</a>
         </li>
         <li><a href="https://yogakamala.uk">Yoga Kamala - Yoga website</a></li>
         <li>
-          <a href="https://pilkarzykowo.pl"
-            >Piłkarzykowo - Foosball events website</a
-          >
+          <a href="https://pilkarzykowo.pl">Piłkarzykowo - Foosball events</a>
         </li>
         <li>
-          <a href="https://jakubpiskorz.dev/analog24"
-            >Analog24 - E-commerce mockup</a
-          >
+          <a href="analog24">Analog24 - E-commerce mockup</a>
         </li>
         <li>
           <a href="https://hotely.netlify.app">Hotely - Hotel website mockup</a>
         </li>
+        <!-- <div class="divider"></div> -->
       </ul>
+      <div class="personal-links">
+        <div><a href="/cv" target="_blank">CV</a></div>
+        <div>
+          <a href="https://github.com/Jakub-Piskorz" target="_blank">GitHub</a>
+        </div>
+      </div>
       <footer>
-        <p>
-          <strong
-            >Contracts limited due to current employment.<br/ >Thank you for
-            your patience.</strong
-          >
-        </p>
-        <!-- <p>
-          <strong>Hire me:</strong>
-        </p> -->
         <a id="email"></a>
         <button
           class="g-recaptcha"
